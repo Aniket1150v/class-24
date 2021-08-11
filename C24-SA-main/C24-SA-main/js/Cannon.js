@@ -1,0 +1,19 @@
+class Cannon{
+    constructor(x,y,width,height,angle){
+        this.x=x;
+        this.y=y;
+        this.width=width;
+        this.height=height;
+        this.angle=angle;
+    }
+ display(){
+    fill("#676e6a");
+     push()
+     translate(this.x,this.y);
+     rotate(angle)
+     rect(-10,-20,this.width,this.height)
+     pop()
+     arc(this.x-50,this.y+90,100,80,PI,TWO_PI) 
+     noFill();
+ }
+}
